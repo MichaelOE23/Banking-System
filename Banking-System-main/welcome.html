@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/bank_account.css" />
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+        <!-- If you enabled Firestore, include it -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    </head>
+
+    <body>
+        <div class="flex">
+            <div class="element-center">
+                <div id="balances">
+                    <h1>Checking Balance</h1>
+                    <label id="checkingBalance"></label>
+
+                    <h1>Savings Balance</h1>
+                    <label id="savingsBalance"></label>
+                </div>
+
+                <div id="depositFields" style="display: none">
+                    <h2>Deposit to Checking</h2>
+                    <input type="number" id="checkingDeposit" required />
+                    <button id="btnDepositChecking">Deposit</button>
+
+                    <h2>Deposit to Savings</h2>
+                    <input type="number" id="savingsDeposit" required />
+                    <button id="btnDepositSavings">Deposit</button>
+                </div>
+
+                <div id="withdrawalFields" style="display: none">
+                    <h2>Withdraw from Checking</h2>
+                    <input type="number" id="checkingWithdrawal" required />
+                    <button id="btnWithdrawChecking">Withdraw</button>
+
+                    <h2>Withdraw from Savings</h2>
+                    <input type="number" id="savingsWithdrawal" required />
+                    <button id="btnWithdrawSavings">Withdraw</button>
+                </div>
+
+                <div id="transferFields" style="display: none">
+                    <h2>Transfer from Checking to Savings</h2>
+                    <input type="number" id="checkingTransfer" required />
+                    <button id="btnTransferCheckingToSavings">Transfer</button>
+
+                    <h2>Transfer from Savings to Checking</h2>
+                    <input type="number" id="savingsTransfer" required />
+                    <button id="btnTransferSavingsToChecking">Transfer</button>
+                </div>
+
+                <div id="actions">
+                    <button id="btnDeposit">Make Deposit</button>
+                    <button id="btnWithdraw">Make Withdrawal</button>
+                    <button id="btnTransfer">Transfer Funds</button>
+                    <button id="btnCrypto">Crypto Investments</button>
+                    <button id="btnSave">Save</button>
+                    <form> <input type="button" value="Logout" onclick="history.back()"> </form> 
+                </div>
+            </div>
+        </div>
+
+        <script src="/bank_account_script.js"></script>
+    </body>
+</html>

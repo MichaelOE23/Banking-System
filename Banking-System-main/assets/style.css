@@ -1,0 +1,17 @@
+body {
+    --color-primary-dark: #009579;
+    --color-secondary: #009579;
+    --color-error: #009579;
+    --color-sucess: #009579;
+    --border-radius: 4px;
+
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size:18px;
+    background: url(https://logos-download.com/wp-content/uploads/2019/11/Bowie_State_University_Logo_full.png);
+    background-size: cover;
+    
+}

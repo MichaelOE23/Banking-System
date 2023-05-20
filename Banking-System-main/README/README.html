@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project Documentation</title>
+    </head>
+    <body>
+        <h1>Project Documentation</h1>
+
+        <h2>Overview</h2>
+
+        <p>
+            This project consists of a simple banking application that allows
+            users to log in, view their checking and savings account balances,
+            make deposits, transfer funds, and explore a placeholder page for
+            future crypto investments. The project is built using HTML, CSS, and
+            JavaScript, with Firebase as the backend database.
+        </p>
+
+        <h2>File Structure</h2>
+
+        <h3>index.html</h3>
+
+        <p>
+            The <code>index.html</code> file is the login and registration page
+            for the application. Users can enter their username and password to
+            log in or register for a new account. Upon successful login, users
+            are redirected to the <code>welcome.html</code> page.
+        </p>
+
+        <h3>welcome.html</h3>
+
+        <p>
+            The <code>welcome.html</code> file is the main page that displays
+            the user's financial information. It shows checking and savings
+            account balances, provides buttons to make deposits and transfer
+            funds, and offers a link to the <code>crypto.html</code> page. All
+            the buttons are designed to toggle visibility of their respective
+            input fields.
+        </p>
+
+        <h3>crypto.html</h3>
+
+        <p>
+            The <code>crypto.html</code> file is a placeholder page for future
+            implementation of crypto investments. The contents of this page
+            should be discussed with the professor or other students to fulfill
+            the crypto investment requirement in the assignment document.
+        </p>
+
+        <h3>login.js</h3>
+
+        <p>
+            The <code>login.js</code> file handles user authentication and
+            registration. It interacts with the Firebase database to store user
+            information, such as username and password. It is important to note
+            that you need to change the location of the JSON file in the
+            argument of the
+            <code>const serviceAccount = require()</code> function on line 8 to
+            match your local machine.
+        </p>
+
+        <h3>bank_account_script.js</h3>
+
+        <p>
+            The <code>bank_account_script.js</code> file contains the
+            functionality for updating the checking and savings balances
+            displayed on the <code>welcome.html</code> page. It interacts with
+            the Firebase database to store and retrieve the user's financial
+            information in real-time.
+        </p>
+
+        <h2>Firebase Database Setup</h2>
+
+        <p>
+            The Firebase database is set up with two collections:
+            <code>users</code> and <code>financial</code>. The
+            <code>users</code> collection stores the username and password of
+            each registered user. The <code>financial</code> collection stores
+            the checking and savings account balances of each user, with the
+            document ID matching the corresponding user document ID.
+        </p>
+
+        <h2>Testing Functionality</h2>
+
+        <p>
+            To test the functionality of the website from start to finish,
+            follow these steps:
+        </p>
+
+        <ol>
+            <li>Start the application by running <code>login.js</code>.</li>
+            <li>
+                Open a browser and navigate to the login page (usually at
+                <code>localhost:4000</code>).
+            </li>
+            <li>Register a new user or log in with an existing account.</li>
+            <li>
+                Once logged in, you will be redirected to the
+                <code>welcome.html</code> page.
+            </li>
+            <li>Test the deposit, transfer funds, and crypto investment</li>
+            <li>
+                Check the Firebase database to ensure that the financial
+                information is being updated in real-time.
+            </li>
+        </ol>
+        <h2>Remaining Tasks</h2>
+
+        <ol>
+            <li>
+                Implement the <code>crypto.html</code> file and any necessary
+                JavaScript functionality.
+            </li>
+            <li>
+                If time permits, improve the design and appearance of the
+                website.
+            </li>
+            <li>Figure out how to host the app using Firebase.</li>
+            <li>
+                Create your own individual home page with your resume, as
+                instructed by the professor.
+            </li>
+        </ol>
+    </body>
+</html>
